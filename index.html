@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESTful Table</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>RESTful Routes</h1>
+            <p>A table of all 7 RESTful routes</p>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Path</th>
+                    <th>HTTP Verb</th>
+                    <th>Purpose</th>
+                    <th>Mongoose Methods</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Index</th>
+                    <th>/blogs</th>
+                    <th>GET</th>
+                    <th>Dispay All Dogs</th>
+                    <th>Blog.find()</th>
+                </tr>
+                <tr class="table-success">
+                    <th>New</th>
+                    <th>/blogs/new</th>
+                    <th>GET</th>
+                    <th>Show new blog form</th>
+                    <th>N/A</th>
+                </tr>
+                <tr class="table-success">
+                    <th>Create</th>
+                    <th>/blogs</th>
+                    <th>POST</th>
+                    <th>Create a new dog, then redirect somewhere</th>
+                    <th>Blog.create()</th>
+                </tr>
+                <tr class="table-primary">
+                    <th>Show</th>
+                    <th>/blogs/:id</th>
+                    <th>GET</th>
+                    <th>Show info about one specific blog</th>
+                    <th>Blog.findById()</th>
+                </tr>
+                <tr class="table-warning">
+                    <th>Edit</th>
+                    <th>/blogs/:id/edit</th>
+                    <th>GET</th>
+                    <th>Show edit form for one blog</th>
+                    <th>Blog.findById()</th>
+                </tr>
+                <tr class="table-warning">
+                    <th>Update</th>
+                    <th>/blogs/:id</th>
+                    <th>PUT</th>
+                    <th>Update a particular dog, then redirect somehwere</th>
+                    <th>Blog.findByIdandUpdate()</th>
+                </tr>
+                <tr class="table-danger">
+                    <th>Destroy</th>
+                    <th>/blogs/:id</th>
+                    <th>DELETE</th>
+                    <th>Delete a particular blog, then redirect somewhere</th>
+                    <th>Blog.findByIdandDelete()</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+
+</html>
